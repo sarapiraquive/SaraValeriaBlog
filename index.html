@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Sara Valeria Piraquive </title>
+	<style>
+		.tab {
+			display: none;
+		}
+		
+		.tab.active {
+			display: block;
+		}
+		
+		.tab-button {
+			background-color: #EFE9DC;
+			color: #000000;
+			padding: 10px 20px;
+			cursor: pointer;
+			font: 0.8em "Fira Sans", serif;
+			border: none;
+		}
+		
+		.tab-button.active {
+			background-color: #;
+		}
+	</style>
+	<script>
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tab");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tab-button");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<button class="tab-button active" onclick="openTab(event, 'tab1')">Home</button>
+		<button class="tab-button" onclick="openTab(event, 'tab2')">The Blog</button>
+		<button class="tab-button" onclick="openTab(event, 'tab3')">About</button>
+	</div>
+	<div id="tab1" class="tab active">
+			<body>
+		<header>
+			<img src="Logo.jpg"
+				width="200"
+				height="100">
+	      
+	    </header>
+
+	    <main>
+	      <section class="hero">
+	        <p> Este es mi blog personal en donde compartiré quien soy yo, cuáles son mis gustos, mis pensamientos, mis propósitos y la vida que quiero a futuro como Ingeniera. Podrás conocer un poco sobre mi vida, mis motivaciones y sobre mi día a día. ¡Bienvenido!</p>
+	        <img src="fotoblog.jpg"
+				width="455"
+				height="390">
+	    </main>
+    <footer>
+      <p>Derechos de autor © 2023 Sara Valeria Piraquive</p>
+    </footer>
+
+
+
+	</body>
+	</div>
+	<div id="tab2" class="tab">
+		<header>
+			<img src="Logo.jpg"
+				width="200"
+				height="100">
+	      
+	    </header>
+		</section>
+			    <main>
+	      <section class="max">
+	        <p> Soy Sara Valeria Piraquive, tengo 17 años, estudiante de ingeniería informática de la universidad de la Sabana. Nací en Bogotá pero actualmente vivo en Cajicá con mis papás y mi hermano, tengo una vida bastante agitada y con muchos cambios ya que he tenido que cambiarme varias veces de colegio, de casa, de país, etc, sin embargo, esto me ha permitido ser quién soy; una persona a la que le gusta aprender muchas cosas y destacarme en lo que hago, soy bastante competitiva, creativa y disciplinada. Los demás siempre me han considerado una persona extremadamente perfeccionista e impredecible, pues a veces mis gustos o mis actividades las mantengo de manera muy privada, por eso siempre hay algo que descubir de mí, de hecho considero que aún me quedan muchas cosas por descubrir, eso es lo interesante, la incertidumbre me causa curiosidad y siempre estoy pensando en el futuro, tal vez esta sea la razón más importante por la cual decidí estudiar una ingeniería.</p>
+	        
+	      </section>
+	      <section class="features">
+	        <div class="feature">
+	          <h3>Mis gustos y hobbies</h3>
+	          <p>He sido una persona muy artística y creativa pero no me gusta compartirlo con los demás, desde pequeña me ha gustado mucho el baile y el canto, lo he practicado toda mi vida de manera informal porque es algo que en realidad me gusta hacer cuando estoy aburrida, triste o enojada. También me gusta mucho la actividad física, me siento bien haciéndolo, siempre he tratado de entrenar y estar activa de cualquier forma; actualmente entreno 6 veces a la semana en el gimnasio. No soy una persona a la cual le apasione mucho leer, sin embargo, hay temas específicos que me encantan, como los libros de drama, romance o antropológicos, especialmente aquellos que se relacionan con la ciencia y la tecnología. También me gusta mucho escuchar música y estar con mi familia, prefiero quedarme en casa y estar conmigo misma antes que salir con amigos. 
+	          	<br><br> </p>
+	        </div>
+	        	<img src="gym.jpg"
+				width="384"
+				height="500"> 
+	        <div class="feature">
+	          <h3>Mi pasado y experiencias</h3>
+	          <p> Desde muy pequeña recuerdo que siempre me gustó conocer lugares nuevos; a los 7 años me mudé de Bogotá a Santiago de Chile y comencé a estudiar allí, me gustó mucho porque pude conocer personas nuevas, ciudades con mucha cultura y comida rica. Adaptarme no fue un proceso muy largo porque me gustaba mucho la vida que tenía, pero al volver a Colombia me di cuenta de lo mucho que cambia todo de un lugar a otro. Estar 5 años en Chile me permitió tener una perspectiva diferente del mundo y de las personas, saber qué es mejor y qué estilo de vida me conviene más. Creo que de esta manera podré ser capaz de decidir mejor mi futuro y dejar el conformismo para luchar por lo que quiero.
+	          	<br><br>
+	          </p>
+	         </div>
+	          <img src="chile.jpg"
+				width="384"
+				height="490">
+	        <div class="feature">
+	          <h3>Mi futuro y plan de acción</h3>
+	          <p> El futuro es algo en lo que siempre pienso pero me parece que es muy difícil predecir que sucederá exactamente o escoger desde ya el camino a tomar, sin embargo, tengo claro que en primer lugar quiero terminar el pregrado de ingeniería informática, me gustaría hacer una doble titulación con economía en la Universidad de la Sabana, creo que es una muy buena combinación que puede traer consigo excelentes resultados. Como propósitos de vida me gustaría mucho viajar por el mundo y conocer varios lugares, dominar más de dos idiomas y ser felíz con lo que sea que haga a futuro.
+	          	<br><br>
+	          </p>
+	          </div>
+	         <img src="econo.jpg"
+				width="384"
+				height="445">
+	      </section>
+	    </main>
+    <footer>
+      <p>Derechos de autor © 2023 Sara Valeria Piraquive</p>
+    </footer>
+
+	</div>
+	<div id="tab3" class="tab">
+		<header>
+			<img src="Logo.jpg"
+				width="200"
+				height="100">
+	    </header>
+	    <img src="Me.jpg"
+	    		width="1500"
+				height="850">
+	     <footer>
+      <p>Derechos de autor © 2023 Sara Valeria Piraquive</p>
+    </footer>
+	</div>
+
+	    <style type="text/css">
+    	body {
+		  margin: 0;
+		  font: 1.2em "Fira Sans", serif;
+		  line-height : 30px;
+		}
+
+		header {
+		  background-color: #EFE9DC;
+		  color: #000000;
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  padding: 20px;
+		}
+
+		nav ul {
+		  list-style: none;
+		  display: flex;
+		}
+
+		nav ul li a {
+		  color: #000000;
+		  text-decoration: none;
+		  padding: 10px;
+		}
+
+		nav ul li a:hover {
+		  background-color: #fff;
+		  color: #333;
+		}
+
+		.hero {
+		  background-color: #F8F6F1;
+		  text-align: left;
+		  padding: 50px;
+		}
+
+		.hero img {
+			margin-top: -50px;
+			margin-left: 600px;
+ 			display: block;
+		}
+
+		.hero p {
+			width: 300px;
+			height: 1px;
+		  font-size: 20px;
+		  margin-left: 200px;
+		}
+		
+		.max {
+		  background-color: #F8F6F1;
+		  text-align: left;
+		  padding: 100px;
+		}
+
+		.max img {
+
+			margin-top: -50px;
+			margin-left: 600px;
+ 			display: block;
+		}
+
+		.max p {
+			margin-top: -75px;
+			width: 1250px;
+			height: 175px;
+		  font-size: 20px;
+		  margin-right: 50px;
+
+		}
+		.features img {
+			margin-top: -430px;
+			margin-left: 1000px;
+
+		}
+
+		.features {
+		  
+		  justify-content: space-between;
+		  margin: 20px 0;
+		}
+
+		.feature {
+		  width: 60%;
+		  text-align: center;
+		  padding: 30px;
+		  background-color: #EFE9DC;
+		  border-radius: 10px;
+		}
+
+		.feature h3 {
+		  font-size: 24px;
+		  margin-bottom: 20
+    </style>
+</body>
+</html>
